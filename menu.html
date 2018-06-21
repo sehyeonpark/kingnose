@@ -22,7 +22,6 @@
       letter-spacing: 50px;
       font-style: italic;
     }
-
     .mainmenu{
       color:black;
       font-size: 20px;
@@ -40,20 +39,34 @@
       padding-bottom: 50px;
       padding-top: 50px;
     }
+    .cmenu{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #menu_c{
+      padding-left: 100px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1 id="title"><a href="index.html" id="king">왕코커피</a></h1>
+    <h1 id="title"><a href="index.html" id="king">왕코커피</a>
+    <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <article>
-      <ul class="menu">
-        <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
-        <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
-        <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
-      </ul>
-    </article>
+    <div class="cmenu">
+      <article>
+        <ul class="menu">
+          <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
+          <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
+          <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
+        </ul>
+      </article>
+        <ul id="menu_c">
+          <li>Americano</li>
+          <li>Latte</li>
+        </ul>
+    </div>
   </section>
 </body>
 </html>

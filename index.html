@@ -39,6 +39,22 @@
       padding-bottom: 50px;
       padding-top: 50px;
     }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #text{
+      padding-left: 60px;
+    }
+    #text h2{
+      text-align: center;
+    }
+    #img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+    }
   </style>
 </head>
 <body>
@@ -47,13 +63,19 @@
     <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <article>
-      <ul class="menu">
-        <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
-        <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
-        <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
-      </ul>
-    </article>
+    <div id="grid">
+      <article>
+        <ul class="menu">
+          <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
+          <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
+          <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
+        </ul>
+      </article>
+      <article id="text">
+        <h2>안녕하세요 왕코커피입니다.</h2>
+        <img src="coffee.jpg" alt="커피이미지" title="커피" id="img">
+      </article>
+    </div>
   </section>
 </body>
 </html>

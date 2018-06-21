@@ -22,7 +22,6 @@
       letter-spacing: 50px;
       font-style: italic;
     }
-
     .mainmenu{
       color:black;
       font-size: 20px;
@@ -40,20 +39,45 @@
       padding-bottom: 50px;
       padding-top: 50px;
     }
+    .map{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #map{
+      padding-left: 100px;
+    }
+    #map img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+      height: 300px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1 id="title"><a href="index.html" id="king">왕코커피</a></h1>
+    <h1 id="title"><a href="index.html" id="king">왕코커피</a>
+    <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <article>
-      <ul class="menu">
-        <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
-        <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
-        <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
-      </ul>
-    </article>
+    <div class="map">
+      <article>
+        <ul class="menu">
+          <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
+          <li class="mlist"><a href="event.html" class="mainmenu" title="Event" >이벤트</a></li>
+          <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
+        </ul>
+      </article>
+      <article id="map">
+        <img src="map.jpg" alt="지도사진" title="지도">
+        <ul>
+          <li>지하철 : 8호선 문정역</li>
+          <li>버스 : 1650번</li>
+        </ul>
+      </article>
+    </div>
   </section>
 </body>
 </html>
