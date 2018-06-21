@@ -8,45 +8,7 @@
   <meta name="author" content="PPARK_SSE">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>왕코커피</title>
-
-  <style>
-    #title{
-      text-align: center;
-      border-bottom: 1px solid gray;
-      padding-bottom:  50px;
-      margin: 0px;
-    }
-    #king{
-      color: black;
-      text-decoration: none;
-      letter-spacing: 50px;
-      font-style: italic;
-    }
-    .mainmenu{
-      color:black;
-      font-size: 20px;
-      text-decoration: none;
-      margin:0px;
-    }
-
-    .menu{
-      list-style-type: none;
-      border-right: 1px solid gray;
-      width: 150px;
-      margin: 0px;
-    }
-    .mlist{
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-    .cmenu{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #menu_c{
-      padding-left: 100px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -54,7 +16,7 @@
     <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <div class="cmenu">
+    <div id="grid">
       <article>
         <ul class="menu">
           <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
@@ -62,10 +24,12 @@
           <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
         </ul>
       </article>
-        <ul id="menu_c">
+      <article id="text">
+        <ul>
           <li>Americano</li>
           <li>Latte</li>
         </ul>
+      </article>
     </div>
   </section>
 </body>

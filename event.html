@@ -8,55 +8,7 @@
   <meta name="author" content="PPARK_SSE">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>왕코커피</title>
-
-  <style>
-    #title{
-      text-align: center;
-      border-bottom: 1px solid gray;
-      padding-bottom:  50px;
-      margin: 0px;
-    }
-    #king{
-      color: black;
-      text-decoration: none;
-      letter-spacing: 50px;
-      font-style: italic;
-    }
-    .mainmenu{
-      color:black;
-      font-size: 20px;
-      text-decoration: none;
-      margin:0px;
-    }
-
-    .menu{
-      list-style-type: none;
-      border-right: 1px solid gray;
-      width: 150px;
-      margin: 0px;
-    }
-    .mlist{
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-    .mevent{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #event_m{
-      padding-left: 100px;
-    }
-    #event_m h2{
-      text-align: center;
-    }
-    #event_m img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 450px;
-      height: 500px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -64,7 +16,7 @@
     <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <div class="mevent">
+    <div id="grid">
       <article>
         <ul class="menu">
           <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
@@ -72,9 +24,9 @@
           <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
         </ul>
       </article>
-      <article id="event_m">
+      <article id="text">
         <h2>왕코를 잡아라!!</h2>
-        <img src="nose.png" alt="왕코사진" title="왕코사진">
+        <img id="img" src="nose.png" alt="왕코사진" title="왕코사진">
       </article>
     </div>
   </section>

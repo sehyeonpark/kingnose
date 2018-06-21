@@ -8,53 +8,7 @@
   <meta name="author" content="PPARK_SSE">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>왕코커피</title>
-
-  <style>
-    #title{
-      text-align: center;
-      border-bottom: 1px solid gray;
-      padding-bottom:  50px;
-      margin: 0px;
-    }
-    #king{
-      color: black;
-      text-decoration: none;
-      letter-spacing: 50px;
-      font-style: italic;
-    }
-    .mainmenu{
-      color:black;
-      font-size: 20px;
-      text-decoration: none;
-      margin:0px;
-    }
-
-    .menu{
-      list-style-type: none;
-      border-right: 1px solid gray;
-      width: 150px;
-      margin: 0px;
-    }
-    .mlist{
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-    .map{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #map{
-      padding-left: 100px;
-    }
-    #map img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 450px;
-      height: 300px;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -62,7 +16,7 @@
     <img src="nose.png" alt="왕코커피" title="왕코로고" width="50px" id="nose"></h1>
   </header>
   <section>
-    <div class="map">
+    <div id="grid">
       <article>
         <ul class="menu">
           <li class="mlist"><a href="menu.html" class="mainmenu" title="Menu">메뉴</a></li>
@@ -70,8 +24,8 @@
           <li class="mlist"><a href="way.html" class="mainmenu" title="Place" >찾아오는 길</a></li>
         </ul>
       </article>
-      <article id="map">
-        <img src="map.jpg" alt="지도사진" title="지도">
+      <article id="text">
+        <img id="img"src="map.jpg" alt="지도사진" title="지도">
         <ul>
           <li>지하철 : 8호선 문정역</li>
           <li>버스 : 1650번</li>
